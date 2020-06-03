@@ -1,5 +1,7 @@
 # robotframework_rpa_example
 
+## rpa_example.robot
+    This robot task file is used to search any item and create a excel file with searched items and searched items amazon urls. Search item is passed in command line(please see example in step 6 ). 
 1. Install pip first
     
     sudo apt-get install python3-pip
@@ -22,4 +24,6 @@
 
 6. Run Robot command
   
+    robot --variable search_for:"<search item name>" rpa_example.robot
+    # Example
     robot --variable search_for:"mirrorless camera" rpa_example.robot
