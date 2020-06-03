@@ -12,6 +12,7 @@ ${headless}=    ${False}
 
 *** Tasks ***
 Create Excel File With Search Items On Amazon
+    [Documentation]    This Task is used to search for any item on amazon and create excel file of searched items.
     [Setup]    Open Browser And Maximize
     Input Text When Element Is Visible    ${search_box}    ${search_for}
     Click Button    ${search_btn}
